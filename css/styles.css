@@ -1,0 +1,196 @@
+/*CSS
+CSS HEX
+--cadet: #4f6d7aff;
+--ash-gray: #cadbc8ff;
+--vivid-tangerine: #f6a38eff;
+--light-pink: #f4acb7ff;
+--amaranth-pink: #e79cb4ff;
+--mountbatten-pink: #9d8189ff;
+font-family: 'Architects Daughter', cursive;
+font-family: 'Montserrat', sans-serif;
+*/
+/*Global styles
+--------------------------------*/
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  color: #1f1f1f; /*343434*/
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+img {
+  width: 280px;
+  height: 200px;
+}
+a {
+  color: #9d8189ff;
+}
+a:hover {
+  text-decoration: none;
+}
+h1 {
+  font-size: 80px;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 45px;
+}
+h1,
+h2 {
+  font-family: "Architects Daughter", cursive;
+  font-weight: 400;
+  margin: 0;
+}
+
+.content-wrap {
+  max-width: 800px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+h3 {
+  margin-bottom: 0;
+}
+/*this is for paragraphs that are followed by h3 only*/
+.edu-details h3 + p {
+  font-style: italic;
+}
+/*This is for all the paragraphs that follow h3*/
+.edu-details h3 ~ p {
+  margin: 0;
+}
+
+.divider > section {
+  border-bottom: 1px dashed #343434;
+  padding: 25px 0;
+}
+.divider > section:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/*Profile
+--------------------------------*/
+header {
+  background: #1d3557;
+  color: #f7fff7;
+}
+/*Education
+--------------------------------*/
+.education {
+  background: #7facc7; /* #F7FFF7 #F4F1DE*/
+}
+/*Work Experience
+--------------------------------*/
+.work-experience {
+  background: #a8dadc; /*#A1C6D7;*/
+}
+/*Publications
+--------------------------------*/
+.publications {
+  background: #f1faee;
+  font-weight: 800;
+  font-size: 18px;
+  /* margin-bottom: 0; */
+}
+.publications ul {
+  list-style: none;
+}
+.publications li::before {
+  content: "\25AA";
+  color: red;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+/*Projects
+--------------------------------*/
+.projects {
+  background: #d56062; /*#cadbc8ff;*/
+  color: #f8e1dd;
+}
+.feature-proj {
+  color: #cadbc8ff;
+}
+
+.proj-item p {
+  margin-bottom: 2px;
+}
+/*Contact
+--------------------------------*/
+footer {
+  background: #00356a;
+  color: #f7fff7;
+}
+
+.contact {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact a {
+  padding: 15px;
+  display: inline-block;
+}
+/* .flag-counter{
+  font-size: 0.6em;
+} */
+
+/*Responsive Styles
+--------------------------------*/
+@media screen and (min-width: 750px) {
+  header,
+  footer {
+    text-align: center;
+  }
+  .job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 15px;
+  }
+  .proj-item {
+    /* float: left;
+    margin-right: 20px; */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 25px;
+  }
+  .contact {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  h1 {
+    font-size: 60px;
+    line-height: 0.9;
+    margin-bottom: 20px;
+  }
+  h2 {
+    line-height: 1;
+  }
+  .contact a {
+    padding: 5px;
+  }
+  /* .flag-counter img{
+    width: 200px;
+    height: auto;
+
+    box-sizing: border-box;
+  } */
+}
+
+.featured-proj {
+  color: honeydew;
+}
